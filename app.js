@@ -1,5 +1,24 @@
+// 注册一个小程序示例
 //app.js
 App({
+  //小程序发生错误时 执行
+  onError:function(){
+
+  },
+  //在小程序界面隐藏是执行
+  onHide:function(){
+
+  },
+  // 准备好小程序展示的数据之后 回调
+  onShow:function(option){
+      wx.getUserInfo({
+        success:function(res){
+          //console.log(res)
+        }
+      })
+  },
+  // 小程序初始化完成时，执行的生命周期函数
+  //小程序被关闭两小时以内 不执行onlaunch函数
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -34,6 +53,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    name:"李森峰",
+    age:18 
   }
 })

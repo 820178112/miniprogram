@@ -1,0 +1,19 @@
+<!--pages/home/home.wxml-->
+<!-- 小程序数据绑定 -->
+<view>
+  hello {{name}}
+</view>
+<view>我的年龄 {{age}}</view>
+<!-- 列表展示  wx:for-->
+<view wx:for="{{students}}">{{item.name}}--{{item.age}}</view>
+<!-- 事件监听改变 data -->
+<view >当前计数 {{counter}}</view>
+<button size="mini" bindtap="addTap">+</button>
+<button size="mini" bindtap="reduceTap">-</button>  
+<button size="mini" 
+        open-type="getUserInfo"
+        bindgetuserinfo="handleGetUserInfo">获取用户信息</button>
+<open-data type="userNickName">
+  <!-- 展示用户信息 -->
+
+</open-data>
