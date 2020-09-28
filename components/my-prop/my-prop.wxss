@@ -1,0 +1,11 @@
+/* components/my-prop/my-prop.wxss */
+/* components/my-style/my-style.wxss */
+.title{
+  font-style: 20px;
+  font-weight: bold;
+
+}
+.content{
+  font-size: 16px;
+  color: pink;
+}

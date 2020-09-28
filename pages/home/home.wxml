@@ -1,0 +1,15 @@
+<!-- 1.自定义组件的基本使用 -->
+<!-- <my-cpn></my-cpn>
+<my-cpn></my-cpn>
+<my-cpn></my-cpn>
+<cpn2/> -->
+<!-- 2.自定义组件样式的细节 -->
+<!-- <my-style></my-style>
+<view class="content">李森峰</view> -->
+<!-- 给自定义组件传递数据/样式 -->
+<my-prop title="哈哈哈" titleclass="red"></my-prop>
+<my-prop title="呵呵呵" titleclass="green"></my-prop>
+<my-prop titleclass="blue"></my-prop>
+<!-- 子传父 向父组件发出事件 -->
+<view>{{counter}}</view>
+<my-event bind:increament="increament"></my-event>

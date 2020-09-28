@@ -1,0 +1,7 @@
+/* pages/view/view.wxss */
+.box{
+  background-color: white;
+}
+.hoverView{
+  background-color: orange;
+}

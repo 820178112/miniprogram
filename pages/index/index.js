@@ -7,7 +7,10 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    titles:["阿斯蒂","请问","自行车"]
+  },
+  itemClick(){
+
   },
   //事件处理函数
   bindViewTap: function() {

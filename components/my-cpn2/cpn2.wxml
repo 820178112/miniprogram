@@ -1,0 +1,2 @@
+<!--components/my-cpn2/cpn2.wxml-->
+<view>我是自定义组件2</view>

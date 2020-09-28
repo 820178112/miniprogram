@@ -1,0 +1,16 @@
+<!--pages/input/input.wxml-->
+<!-- type 决定键盘类型 -->
+<!-- text 文本键盘
+    number 数字键盘
+  -->
+<input type="text"/>
+<!-- password 暗文 -->
+<input type="text" password/>
+<!-- 占位文本 -->
+<input type="text" placeholder="请输入内容"/>
+<!-- input 绑定事件 bindinput bindfocus blur confirm-->
+<input type="text"
+bindinput="handleInput"
+bindfocus="handleFocus"
+bindblur="handleBlur"
+/>

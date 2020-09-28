@@ -1,0 +1,10 @@
+<!--pages/image/image.wxml-->
+<!-- image组件 是行内块级元素 inline-block 可以设置宽高 -->
+<!-- image组件 有自己默认的宽高 -->
+<!-- 本地路径 绝对路径/path/ 相对路径-->
+<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600956541116&di=c66d48ac0807205329b07db05dbd5fc9&imgtype=0&src=http%3A%2F%2Fwww.euro-premium.cn%2Fsites%2Fdefault%2Ffiles%2F2018%2F01%2F2018-01-30-110.jpg'> </image>
+<button bindtap="chooseAlbumImg">选择图片</button>
+<image src="{{imagepath}}"></image>
+<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600956541116&di=c66d48ac0807205329b07db05dbd5fc9&imgtype=0&src=http%3A%2F%2Fwww.euro-premium.cn%2Fsites%2Fdefault%2Ffiles%2F2018%2F01%2F2018-01-30-110.jpg'
+      wx:for="{{10}}"
+      lazy-load> </image>
