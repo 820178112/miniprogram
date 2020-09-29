@@ -1,0 +1,16 @@
+
+  // js代码
+   var message = "hello world"
+   var name= "lisenfeng"
+   var sum = function(num1,num2){
+     return num1+num2
+   }
+   function test() {
+     return "test function"
+   }
+  //  导出模块 暴露接口
+   module.exports = {
+     message:message,
+     name:name,
+     sum: sum
+   }

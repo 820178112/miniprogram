@@ -1,0 +1,18 @@
+<tab-control titles="{{['流行','新款','精选']}}" bind:itemClick="handleTabClick"></tab-control>
+<my-sel class="sel" id="my-sel" ></my-sel> 
+<button bind:tap="increamentClick" size="mini">增加计数</button>
+<!-- 单个插槽的使用 -->
+<my-slot>
+  <view >我是组件的中间部分</view>
+</my-slot>
+<my-slot>
+  <text>哈哈哈</text>
+</my-slot>
+<my-slot>
+  <slider value="60"></slider>
+</my-slot>
+<!-- 多个插槽的使用 -->
+<my-m-slot>
+  <button slot="slot2">111</button>
+  <slider slot="slot1"></slider>
+</my-m-slot>

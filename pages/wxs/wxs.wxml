@@ -1,0 +1,9 @@
+<!--pages/wxs/wxs.wxml-->
+<text>pages/wxs/wxs.wxml</text>
+<wxs src="../../wxs/info.wxs" module="info"></wxs>
+<view>{{info.message}}</view>
+<view>{{info.sum(10,20)}}</view>
+<!-- 导入模块 使用接口 -->
+<wxs src="../../wxs/format.wxs" module="format"/>
+<view>{{format.priceformat(price)}}</view>
+<view>{{format.dateFormat(time,"yyyy/MM/dd")}}</view>

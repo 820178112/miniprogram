@@ -1,0 +1,15 @@
+// 时间格式化
+function dateFormat(timestape,format){
+  return "2020-9-27"
+}
+// 价格格式化
+function priceformat(price,number){
+  var number = number||2
+  var f_price = parseFloat(price)
+  return f_price.toFixed(number)
+}
+// 模块的导出 导出两个功能函数 暴露接口
+module.exports =  {
+  priceformat:priceformat,
+  dateFormat:dateFormat
+} 

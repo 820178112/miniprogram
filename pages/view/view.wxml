@@ -1,0 +1,9 @@
+<!--pages/view/view.wxml-->
+<!-- 块元素 容器组件 -->
+<view class="box">111</view>
+<!-- hover-class 用户按下组件时的样式 -->
+<view class="box" hover-class="hoverView" hover-stay-time="{{0}}">222</view>
+<!-- 阻止祖先组件的点击态 -->
+<view class="box2" >
+  <view class="box1" hover-stop-propagation>box1</view>
+</view>

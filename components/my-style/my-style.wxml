@@ -1,0 +1,4 @@
+<!--components/my-style/my-style.wxml-->
+<text>components/my-style/my-style.wxml</text>
+<view class="title">my-style</view>
+<view class="">my-style自定义组件</view>
