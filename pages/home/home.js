@@ -8,6 +8,13 @@ Page({
     titles:["首页","分类","购物车","我的"],
     counter:0
   },
+  increamentClick(){
+    const my_sel = this.selectComponent('.sel')
+    my_sel.increamentCounter(5)
+  },
+  handleTabClick(event){
+    console.log(event)
+  },
   increament(event){
     console.log(event)   
     this.setData({
@@ -20,6 +27,7 @@ Page({
     const index= dataset.index
     console.log(item,index)
   },
+  
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,0 +1,5 @@
+<!--components/my-m-slot/my-m-slot.wxml-->
+<view>我是m-slot的开始</view>
+<view> <slot name="slot1"/></view>
+<view> <slot name="slot2"/></view>
+<view>我是m-slot的结束</view>

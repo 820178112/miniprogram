@@ -15,7 +15,10 @@
     "components/my-style/my-style",
     "components/my-prop/my-prop",
     "components/my-event/my-event",
-    "components/tab-control/tab-control"
+    "components/tab-control/tab-control",
+    "components/my-sel/my-sel",
+    "components/my-slot/my-slot",
+    "components/my-m-slot/my-m-slot"
   ],
   "window": {
     "backgroundTextStyle": "light",

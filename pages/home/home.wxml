@@ -1,15 +1,18 @@
-<!-- 1.自定义组件的基本使用 -->
-<!-- <my-cpn></my-cpn>
-<my-cpn></my-cpn>
-<my-cpn></my-cpn>
-<cpn2/> -->
-<!-- 2.自定义组件样式的细节 -->
-<!-- <my-style></my-style>
-<view class="content">李森峰</view> -->
-<!-- 给自定义组件传递数据/样式 -->
-<my-prop title="哈哈哈" titleclass="red"></my-prop>
-<my-prop title="呵呵呵" titleclass="green"></my-prop>
-<my-prop titleclass="blue"></my-prop>
-<!-- 子传父 向父组件发出事件 -->
-<view>{{counter}}</view>
-<my-event bind:increament="increament"></my-event>
+<tab-control titles="{{['流行','新款','精选']}}" bind:itemClick="handleTabClick"></tab-control>
+<my-sel class="sel" id="my-sel" ></my-sel> 
+<button bind:tap="increamentClick" size="mini">增加计数</button>
+<!-- 单个插槽的使用 -->
+<my-slot>
+  <view >我是组件的中间部分</view>
+</my-slot>
+<my-slot>
+  <text>哈哈哈</text>
+</my-slot>
+<my-slot>
+  <slider value="60"></slider>
+</my-slot>
+<!-- 多个插槽的使用 -->
+<my-m-slot>
+  <button slot="slot2">111</button>
+  <slider slot="slot1"></slider>
+</my-m-slot>
